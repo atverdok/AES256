@@ -1,0 +1,13 @@
+<form action="/file_handler" method="post" accept-charset="utf-8"
+      enctype="multipart/form-data">
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" value=""/>
+    <p><select name="action">
+        <option value="encode">encode</option>
+        <option value="decode">decode</option>
+       </select></p>
+    <label for="file">Load file</label>
+    <input id="file" name="file" type="file" value=""/>
+
+    <input type="submit" value="submit"/>
+</form>
