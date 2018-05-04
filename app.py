@@ -110,4 +110,4 @@ app.router.add_post('/file_handler', file_handler)
 app.router.add_get('/', index)
 app.router.add_static('/files', 'files')
 
-web.run_app(app, port='5050')
+web.run_app(app, port= os.getenv('PORT', '5050'))
